@@ -1,0 +1,8 @@
+Switch>enable
+Switch#configure terminal
+Switch(config)#vlan 10
+Switch(config-vlan)#name DATA
+Switch(config-vlan)#exit
+Switch(config)#interface FastEthernet0/1
+Switch(config-if)#switchport mode access
+Switch(config-if)#switchport access vlan 10
